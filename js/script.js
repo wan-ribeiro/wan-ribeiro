@@ -246,3 +246,38 @@ loadingStyle.textContent = `
 `;
 document.head.appendChild(loadingStyle);
 
+
+
+// Project Carousel Functionality
+document.querySelectorAll(".project-carousel").forEach(carousel => {
+    const images = carousel.querySelectorAll(".carousel-image");
+    const dots = carousel.querySelectorAll(".dot");
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.remove("active");
+            dots[i].classList.remove("active");
+        });
+        images[index].classList.add("active");
+        dots[index].classList.add("active");
+    }
+
+    dots.forEach(dot => {
+        dot.addEventListener("click", function() {
+            const slideIndex = parseInt(this.dataset.slide);
+            showImage(slideIndex);
+            currentIndex = slideIndex;
+        });
+    });
+
+    // Optional: Auto-advance carousel
+    // setInterval(() => {
+    //     currentIndex = (currentIndex + 1) % images.length;
+    //     showImage(currentIndex);
+    // }, 5000); // Change image every 5 seconds
+});
+    showImage(currentIndex); // Initialize first image
+});
+
+
