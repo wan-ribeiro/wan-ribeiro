@@ -276,8 +276,7 @@ document.querySelectorAll(".project-carousel").forEach(carousel => {
     //     currentIndex = (currentIndex + 1) % images.length;
     //     showImage(currentIndex);
     // }, 5000); // Change image every 5 seconds
-});
-    showImage(currentIndex); // Initialize first image
+    showImage(currentIndex);
 });
 
 
