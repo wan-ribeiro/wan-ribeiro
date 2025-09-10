@@ -331,6 +331,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-image {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-image img {
+    max-width: 80%; /* Diminui a imagem */
+    max-height: 80%; /* Diminui a imagem */
+    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    border-radius: 20px;
+    display: block;
+    margin: auto; /* Centraliza a imagem */
 }
 
 .image-placeholder {
