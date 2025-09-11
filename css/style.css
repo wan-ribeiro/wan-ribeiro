@@ -338,8 +338,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-image img {
-    max-width: 100%; /* Aumenta a imagem */
-    max-height: 100%; /* Aumenta a imagem */
+    width: 100%; /* Aumenta a imagem para preencher o container */
+    height: 100%; /* Aumenta a imagem para preencher o container */
     object-fit: contain; /* Garante que a imagem inteira seja visível */
     border-radius: 20px;
     display: block;

@@ -281,4 +281,20 @@ document.querySelectorAll(".project-carousel").forEach(carousel => {
 
     // Initialize first image for each carousel
     showImage(0);
+
+    // Add navigation buttons (if needed, this is a placeholder)
+    // const prevButton = carousel.querySelector(".prev-button");
+    // const nextButton = carousel.querySelector(".next-button");
+    // if (prevButton) {
+    //     prevButton.addEventListener("click", () => {
+    //         currentIndex = (currentIndex - 1 + images.length) % images.length;
+    //         showImage(currentIndex);
+    //     });
+    // }
+    // if (nextButton) {
+    //     nextButton.addEventListener("click", () => {
+    //         currentIndex = (currentIndex + 1) % images.length;
+    //         showImage(currentIndex);
+    //     });
+    // }
 });
